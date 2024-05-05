@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProductListFrag"
+    android:background="@color/regWhite"
+    android:backgroundTint="@color/regWhite"
+
+
+    >
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/prodRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingTop="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingBottom="100dp"
+        android:paddingHorizontal="10dp"
+        android:layout_marginHorizontal="20dp"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+    <EditText
+        android:id="@+id/searchEdit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_back"
+        android:hint="Search..."
+        android:paddingStart="12dp"
+        android:fontFamily="@font/ubuntu_reg"
+        android:drawableEnd="@drawable/search"
+        android:drawableTint="#87000000"
+        android:paddingEnd="10dp"
+        android:textColor="@color/black"
+        android:includeFontPadding="false"
+        android:textColorHint="#87000000"
+        android:textSize="18sp"
+        android:paddingVertical="10dp"
+        android:layout_marginHorizontal="20dp"
+        >
+    </EditText>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/blackContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="@color/secBlack"
+        android:background="@color/black"
+        android:alpha="0.5"
+        >
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:elevation="40dp"
+        android:id="@+id/animLoading"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

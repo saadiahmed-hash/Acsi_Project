@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "631075697732",
+    "project_id": "acsi-project",
+    "storage_bucket": "acsi-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:631075697732:android:c19c22773151b085937811",
+        "android_client_info": {
+          "package_name": "com.example.acsi_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzIZq659JyDzMHmZiBZGGtC1JHer3lyW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
