@@ -44,8 +44,7 @@ public class signUp extends AppCompatActivity {
     String[] roles  = { "Inventory Manager", "Store Manager" , "Supplier"};
     protected ArrayAdapter roleAdapter;
 
-    String selectedRole = null ;
-    @SuppressLint("SetTextI18n")
+    String selectedRole = null ;    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

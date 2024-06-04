@@ -63,7 +63,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductViewHolder> {
         } else {
             holder.quantityTxt.setText("Quantity : " + article.getQuantity());
         }
-        if (isExpired(article.getExpirationDate())){
+        if (article.isExpired()){
             holder.expTxt.setText("Expired ! ");
             holder.expTxt.setTextColor(context.getColor(R.color.red));
         } else {
@@ -147,21 +147,6 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductViewHolder> {
         lastPosition = -1;
     }
 
-    // calculate  expired products
-    public static boolean isExpired(String expirationDate) {
-        // Parse expiration date string into day, month, and year components
-        String[] parts = expirationDate.split("/");
-        int day = Integer.parseInt(parts[0]);
-        int month = Integer.parseInt(parts[1]) - 1; // Month is zero-based in Calendar
-        int year = Integer.parseInt(parts[2]);
-
-        // Create Calendar objects for expiration date and current date
-        Calendar expiryDateCalendar = Calendar.getInstance();
-        expiryDateCalendar.set(year, month, day); // Set expiration date
-        Calendar currentDateCalendar = Calendar.getInstance(); // Current date
-        // Compare expiration date with current date
-        return expiryDateCalendar.before(currentDateCalendar);
-    }
 
     // use it for the searching
     public void setData(ArrayList<Article> filtredArray) {

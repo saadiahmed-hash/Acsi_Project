@@ -15,7 +15,6 @@ android {
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -31,6 +30,7 @@ android {
     }
 }
 
+
 dependencies {
     implementation ("com.airbnb.android:lottie:3.4.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
@@ -45,6 +45,5 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation ("com.squareup.picasso:picasso:2.8")
-
     implementation ("com.saadahmedev.popup-dialog:popup-dialog:2.0.0")
 }

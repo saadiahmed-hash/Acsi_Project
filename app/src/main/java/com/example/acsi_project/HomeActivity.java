@@ -20,7 +20,7 @@ public class HomeActivity extends AppCompatActivity {
 
 
     protected FrameLayout frameContainer ;
-    protected LinearLayout addProductBtn , prodListBtn;
+        protected LinearLayout addProductBtn , prodListBtn;
 
     protected ImageView addProdImg, prodListImg ;
     protected TextView addProdTxt , prodListTxt ;
@@ -50,6 +50,7 @@ public class HomeActivity extends AppCompatActivity {
                 activeBottom(prodListTxt , prodListImg);
             }
         });
+
     }
 
     private void init(){
